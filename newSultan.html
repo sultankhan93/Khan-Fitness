@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>KhanFitness is back...</title>
+    <!--Head can contain Scripts which are used to manipulate page fucntionality -->
+    <script type="text/javascript">
+
+      window.onload = function(){
+        var app = document.getElementById("app"),
+        btn = document.getElementById("button");
+        var x = 1;
+      btn.addEventListener("click",handleClick);
+
+        function handleClick(){
+
+          var inner = app.innerHTML;
+          app.innerHTML = inner + `<div class='cool'>SULTAN SUCKS <b>${ x++ }</b>  </div>`;
+        }
+      }
+    </script>
+    <!--Head can also contain styling aka css  -->
+    <!--Style tag holds all your CSS styling options for your page -->
+    <style media="screen">
+        #khan {
+            font-size: 40px
+        }
+        #F {
+          font-size: 40px;
+          color: red;
+        }
+        #fitness {
+            font-size: 20px;
+            color: red;
+        }
+
+        #title{
+          margin-bottom:1px;
+          font-size:1.5em
+        }
+
+        hr {
+          margin:0
+        }
+
+        .cool{
+          border:1px solid #ccc;
+          color:white;
+          background-color:#54d6d6;
+          padding:5px;
+          margin:5px;
+        }
+    </style>
+
+    <!-- link tag helps to connect your stylsheets -->
+
+</head>
+
+<body>
+    <h1 id="title">
+      <span id="khan">Khan</span><span id= "F">F</span><span id="fitness">itness</span>
+    </h1>
+    <hr>
+    <ul>
+      <li>About</li>
+      <li>Photos</li>
+      <li>Videos</li>
+
+      <li>Contact</li>
+    </ul>
+
+    <button type="button" id="button">Click me</button>
+    <div id="app">
+
+    </div>
+
+    <!-- <div id="div1" class="divs">
+        Khan
+      </div>
+      <div id="div2" class ="divs">
+        Fitness
+      </div> -->
+    <!--
+        TAGS
+        {<div></div>} refers to the main building block tag for webpages
+
+        {<h1></h1> - <h4></h4>} refers to heading tags
+        {<p></p>}  refers to a paragraph tag
+        {<a></a>} refers to a link
+
+        {<ul></ul>} refers to the wrapper tag for an unorderled list
+        {<ol></ol>} refers to the wrapper tag for an ordered list
+        {<li></li>} refers to items in a list
+        {<span></span>} wrap a section of text to be targeted
+
+        {<video></video>} for showing videos on your webpage
+        {<img/>} for displaying images
+
+
+
+
+
+      -->
+</body>
+
+</html>
